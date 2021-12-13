@@ -157,7 +157,6 @@ void BBST::erase(const int& x) {
 }
 
 void BBST::find(Node*& node, const int& x, int& count) {
-	
 	if (node != NULL) {
 		if (count > 0) {
 			if (x > node->data) {
@@ -178,7 +177,6 @@ void BBST::find(Node*& node, const int& x, int& count) {
 }
 
 void BBST::findxsmallest(Node*& node, const int& x, int& count) {
-	
 	if (count >= 0) {
 		if (node != NULL) {
 			if (count + countRank(node->left) + 1 <= x &&
@@ -197,7 +195,6 @@ void BBST::findxsmallest(Node*& node, const int& x, int& count) {
 }
 
 void BBST::precursor(Node*& node, const int& x, Node*& value) {
-	
 	if (node != NULL) {
 		if (x > node->data) {
 			value = node;
@@ -208,7 +205,6 @@ void BBST::precursor(Node*& node, const int& x, Node*& value) {
 }
 
 void BBST::successor(Node*& node, const int& x, Node*& value) {
-	
 	if (node != NULL) {
 		if (x < node->data) {
 			value = node;
