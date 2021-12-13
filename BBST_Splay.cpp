@@ -226,7 +226,7 @@ int main() {
 		if (opt == 1) {
 			b.insert(x);
 		}
-		if (opt == 2) {
+		else if (opt == 2) {
 			b.erase(x);
 		}
 		else if (opt == 3) {
